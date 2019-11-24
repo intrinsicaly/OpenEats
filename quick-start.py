@@ -19,7 +19,7 @@ def update_image_tags(version=None):
     version = '''version: '2.3'
 services:
   api:
-    image: intrinsicaly/openeats/openeats-api:%s
+    image: intrinsicaly/openeats-api:%s
   web:
     image: openeats/openeats-web:%s
   nginx:
@@ -35,7 +35,7 @@ def download_images(version=None):
     print("==================")
     print("Downloading Images")
     print("==================")
-    call(['docker', 'pull', 'intrinsicaly/openeats/openeats-api:' + version])
+    call(['docker', 'pull', 'intrinsicaly/openeats-api:' + version])
     call(['docker', 'pull', 'openeats/openeats-web:' + version])
     call(['docker', 'pull', 'openeats/openeats-nginx:' + version])
 
