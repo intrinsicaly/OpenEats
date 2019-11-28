@@ -1,7 +1,7 @@
 version: '2.3'
 services:
   api:
-    image: openeats/openeats-api
+    image: intrinsicaly/openeats-api
     command: /startup/prod-entrypoint.sh
     restart: on-failure
     volumes:
